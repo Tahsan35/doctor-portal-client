@@ -2,7 +2,7 @@ import React from 'react';
 import treatment from '../../assets/images/treatment.png'
 const SecondBanner = () => {
     return (
-        <div className="card lg:card-side bg-base-100 shadow-xl py-10" >
+        <div className="card lg:card-side shadow-xl py-10" >
             <div className="hero-content flex-col lg:flex-row-reverse" >
                 <div>
                     <h1 className="text-5xl font-bold">Exceptional Dental Care, on Your Terms</h1>
