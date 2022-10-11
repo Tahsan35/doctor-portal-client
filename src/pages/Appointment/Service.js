@@ -3,8 +3,8 @@ import React from 'react';
 const Service = ({ service, setTreathment }) => {
     const { name, slots } = service;
     return (
-        <div class="card w-96 bg-base-100 shadow-xl">
-            <div class="card-body">
+        <div class="card lg:max-w-lg bg-base-100 shadow-xl">
+            <div class="card-body text-center">
                 <h2 class="card-title text-secondary">{name}</h2>
                 <p>{
                     slots.length ? <span>{slots[0]}</span> : <span className='text-red-500'>No Slot Available</span>
@@ -14,7 +14,7 @@ const Service = ({ service, setTreathment }) => {
                     <label for="booking-modal"
                         disabled={slots.length === 0}
                         onClick={() => setTreathment(service)}
-                        class="btn btn-secondary text-emerald-50">Book Appointment</label>
+                        class="btn btn-sm btn-secondary text-white uppercase bg-gradient-to-r from-secondary to-primary">Book Appointment</label>
                 </div>
             </div>
         </div>
